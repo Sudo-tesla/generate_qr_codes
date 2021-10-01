@@ -20,8 +20,8 @@ csv()
                 QRCode.toFile(`..\\output\\svg_output\\class_${studentsInClass[i].class_id} id_${studentsInClass[i]._id}.${imageType}`,studentsInClass[i]._id,{ errorCorrectionLevel: 'H',type: imageType }, function (err, url) {
 
                 })
-                imageType = 'png';
-                QRCode.toFile(`..\\output\\png_output\\class_${studentsInClass[i].class_id} id_${studentsInClass[i]._id}.${imageType}`,studentsInClass[i]._id,{ errorCorrectionLevel: 'H',type: imageType }, function (err, url) {
+                //imageType = 'png';
+                QRCode.toFile(`..\\output\\png_output\\class_${studentsInClass[i].class_id} id_${studentsInClass[i]._id}.png`,studentsInClass[i]._id,{ errorCorrectionLevel: 'H',type: 'png' }, function (err, url) {
 
                 })
 
